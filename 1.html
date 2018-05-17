@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>js obj</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+      var fiat = {
+        make: "Flat",
+        model: "500",
+        year: 1957,
+        mileage: 2000,
+        color: "Medium Blue",
+        started: flase,
+        drive: function () {
+          if ( this.started) {
+           alert("Zoom Zoom!!");
+        }else{
+          alert("请先启动车辆")
+        }
+      },
+       start: function (){
+        this.started = true;
+      },
+       stop: function () {
+         this.started = false;
+       },
+        getColor: function() {
+          return this.color;
+        },
+        setColor: function(c){
+          this.color = c;
+        }
+      }
+      flat.start();
+      flat.drive();
+      flat.drive();
+      flat.drive();
+      flat.stop();
+      
+      document.write(fiat.getColor() + "<br>");
+      fiat.setColor('golden');
+      document.write(fiat.getColor( + "<br>"));
+
+    </script>
+    </body>
+    </html>

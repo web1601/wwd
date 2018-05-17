@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ie=edge">
+    <title>Document</title>
+    <script>
+      function init(){
+        var str = "i'm fine thanks and u!";
+
+        document.write(str.length);
+        document.write("<br>");
+
+        document.write(str. indexOf('and'));
+        document.write("<br>");
+
+        document.write(str.substring(16,19));
+        var strTocut = "thanks";
+        var startIndex = str.indexOf(strToCut);
+        var endIndex = startIndex + strToCut.length;
+        document.write(str.substring(startIndex, endIndex));
+
+
+
+
+        var arrStr = "100]90]90]85]23]74]54]233";
+        var vals = arrStr.split("]");
+        document.write(vals[7]);
+        
+      }
+
+    window.onload = init;
+      </script>
+  </head>
+  <body>
+
+  </body>
+</html>
